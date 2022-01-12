@@ -1,9 +1,13 @@
 {% extends "base.html" %}
-
 {% block content %}
-<h1 class="title">
-  {{ page.title }}
-</h1>
-<p class="subtitle"><strong>{{ page.date }}</strong></p>
-{{ page.content | safe }}
+<div class="entry heti">
+  <h1 style="text-align: center;">
+    {{ page.title }}
+  </h1>
+  <div style="text-align: center;">{{ page.date }}</div>
+  <hr>
+  <div>
+  </div>
+  {{ page.content | safe }}
+</div>
 {% endblock content %}
