@@ -1,35 +1,147 @@
-{% extends "base.html" %}
-{% block content %}
+<!DOCTYPE html>
+<html lang="en">
 
-<img
-    src="/lewis.png"
-    alt=""
-    style="width: 4rem;height: 4rem;"
->
-<div class="entry heti">
-<h3 style="margin-top: 0;padding-top: 2px;">LEWIS</h3>
-<div>A Boy</div>
-<div>Born at 1993</div>
-<h3>Contacts</h3>
-<div style="margin-bottom: .2rem;">
-    <span>Email:</span>
-    luuoweei#at#gmail.com
-</div>
-<div style="margin-bottom: .2rem;">
-    <span>Wechat:</span>
-    bGV3aXN3b24=
-</div>
-<div style="margin-bottom: .2rem;">
-    <span>Github:</span>
-    <a href="https://github.com/lewiswon">github.com/lewiswon</a>
-</div>
-<div style="margin-bottom: .2rem;">
-    <span>Twitter:</span>
-    <a href="https://twitter.com/lewiswon_">@lewiswon_</a>
-</div>
-<div>
-    <span>Location:</span>
-    <a href="https://www.google.com/maps/place/Chongqing,+China/@29.5536481,106.3338062,10.38z">ChongQing, China</a>
-</div>
-</div>
-{% endblock content %}
+<head>
+    <meta charset="utf-8">
+    <meta
+        http-equiv="X-UA-Compatible"
+        content="IE=edge"
+    >
+    <meta
+        name="viewport"
+        content="width=device-width, initial-scale=1"
+    >
+    <meta
+        name="description"
+        content="皆是胡言"
+    >
+    <title>皆是胡言</title>
+    <link
+        href="/css/normalize.css"
+        rel="stylesheet"
+    >
+    <link
+        href="/css/blog.css"
+        rel="stylesheet"
+    >
+    <link
+        rel="stylesheet"
+        href="//unpkg.com/heti/umd/heti.min.css"
+    >
+    <link
+        rel="apple-touch-icon"
+        sizes="180x180"
+        href="/apple-touch-icon.png"
+    >
+    <link
+        rel="icon"
+        type="image/png"
+        sizes="32x32"
+        href="/favicon-32x32.png"
+    >
+    <link
+        rel="icon"
+        type="image/png"
+        sizes="16x16"
+        href="/favicon-16x16.png"
+    >
+    <link
+        rel="manifest"
+        href="/site.webmanifest"
+    >
+    <link
+        rel="mask-icon"
+        href="/safari-pinned-tab.svg"
+        color="#5bbad5"
+    >
+    <meta
+        name="msapplication-TileColor"
+        content="#da532c"
+    >
+    <meta
+        name="theme-color"
+        content="#ffffff"
+    >
+    <style>
+        html {
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        a {
+            text-decoration: none;
+        }
+
+        a:visited {
+            color: #000;
+        }
+
+        a:hover {
+            text-decoration: none;
+        }
+
+        .logo {
+            font-family: Arial, Helvetica, sans-serif
+        }
+    </style>
+
+</head>
+
+<body>
+    <div style="height: 3rem;border-bottom: solid 1px #e7e7e7;">
+        <div style="max-width: 960px;margin: 0 auto;display:flex;flex-direction:row;justify-content: center;align-items: center;height: 100%;padding: 0 .6rem;">
+            <div>
+                <a
+                    href="/"
+                    class="logo"
+                    style="color: #777;font-size: 20px;"
+                >皆是胡言</a>
+            </div>
+
+        </div>
+    </div>
+    <div>
+    </div>
+    <div style="max-width: 45em;margin: 0 auto;">
+        <div style="padding-top: 1rem;">
+            <section class="section">
+                <div class="container">
+                    {% block content %}
+
+                    <img
+                        src="/lewis.png"
+                        alt=""
+                        style="width: 4rem;height: 4rem;"
+                    >
+                    <div class="entry heti">
+                        <h3 style="margin-top: 0;padding-top: 2px;">LEWIS</h3>
+                        <div>A Boy</div>
+                        <div>Born at 1993</div>
+                        <h3>Contacts</h3>
+                        <div style="margin-bottom: .2rem;">
+                            <span>Email:</span>
+                            luuoweei#at#gmail.com
+                        </div>
+                        <div style="margin-bottom: .2rem;">
+                            <span>Wechat:</span>
+                            bGV3aXN3b24=
+                        </div>
+                        <div style="margin-bottom: .2rem;">
+                            <span>Github:</span>
+                            <a href="https://github.com/lewiswon">github.com/lewiswon</a>
+                        </div>
+                        <div style="margin-bottom: .2rem;">
+                            <span>Twitter:</span>
+                            <a href="https://twitter.com/lewiswon_">@lewiswon_</a>
+                        </div>
+                        <div>
+                            <span>Location:</span>
+                            <a href="https://www.google.com/maps/place/Chongqing,+China/@29.5536481,106.3338062,10.38z">ChongQing, China</a>
+                        </div>
+                    </div>
+                    {% endblock content %}
+                </div>
+            </section>
+        </div>
+</body>
+
+</html>
