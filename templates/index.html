@@ -1,8 +1,9 @@
 {% extends "base.html" %}
 {% block content %}
-{% set section1 = get_section(path="blog/2022/_index.md") %}
+
 <div style="border: solid 1px #e7e7e7; border-radius: 6px;">
-    {% for page in section1.pages %}
+    {% set y2022 = get_section(path="blog/2022/_index.md") %}
+    {% for page in y2022.pages %}
     <div class="list-item">
         <a href="{{ page.permalink | safe }}">
             <div class="list-date">{{page.date}}</div>
@@ -10,5 +11,14 @@
         </a>
     </div>
     {% endfor %}
+    {% set y2018 = get_section(path="blog/2018/_index.md") %}
+    {% for page in y2018.pages %}
+    <div class="list-item">
+        <a href="{{ page.permalink | safe }}">
+            <div class="list-date">{{page.date}}</div>
+            <div class="list-title">{{ page.title }}</div>
+        </a>
     </div>
-    {% endblock content %}
+    {% endfor %}
+</div>
+{% endblock content %}
