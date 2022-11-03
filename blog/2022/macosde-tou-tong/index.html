@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta
+    http-equiv="X-UA-Compatible"
+    content="IE=edge"
+  >
+  <meta
+    name="viewport"
+    content="width=device-width, initial-scale=1"
+  >
+  <meta
+    name="description"
+    content="皆是胡言"
+  >
+  <title>皆是胡言</title>
+  <link
+    href="/css/normalize.css"
+    rel="stylesheet"
+  >
+  <link
+    href="/css/blog.css"
+    rel="stylesheet"
+  >
+  <link
+    rel="stylesheet"
+    href="//unpkg.com/heti/umd/heti.min.css"
+  >
+  <link
+    rel="apple-touch-icon"
+    sizes="180x180"
+    href="/apple-touch-icon.png"
+  >
+  <link
+    rel="icon"
+    type="image/png"
+    sizes="32x32"
+    href="/favicon-32x32.png"
+  >
+  <link
+    rel="icon"
+    type="image/png"
+    sizes="16x16"
+    href="/favicon-16x16.png"
+  >
+  <link
+    rel="manifest"
+    href="/site.webmanifest"
+  >
+  <link
+    rel="mask-icon"
+    href="/safari-pinned-tab.svg"
+    color="#5bbad5"
+  >
+  <meta
+    name="msapplication-TileColor"
+    content="#da532c"
+  >
+  <meta
+    name="theme-color"
+    content="#ffffff"
+  >
+  <style>
+    html {
+      font-family: Arial, Helvetica, sans-serif;
+    }
+
+    a {
+      text-decoration: none;
+    }
+
+    a:visited {
+      color: #000;
+    }
+
+    a:hover {
+      text-decoration: none;
+    }
+
+    .logo {
+      font-family: Arial, Helvetica, sans-serif
+    }
+  </style>
+
+</head>
+<body>
+  <div>
+  </div>
+  <div style="max-width: 45em;margin: 0 auto;">
+    <div style="padding-top: 1rem;padding-left: .8rem; padding-right: .8rem;">
+      <section class="section">
+        <div class="container">
+          
+          <div style="border: solid 1px #e7e7e7;padding-left: 2rem;padding-top: 2rem;padding-right: 2rem;">
+            <div class="entry heti">
+              <h1 style="margin-bottom: 0px;">
+                macOS的头痛问题
+              </h1>
+              <div style="color: darkgray;">2022-08-19</div>
+              <div style="height: 2px;background-color: #ccc;margin-bottom: 2rem;margin-top: 1rem;"></div>
+              <div>
+              </div>
+              <h2 id="0x00">0x00</h2>
+<p>我的电脑不算是配置低, i7 处理器，32GB 内存，但是自从更新 macOS Ventura 之后，卡的生活不能自理，idea 写代码的时候，恨不的一个字母一个字母的往出来崩，虽然说是 beta 系统吧，但是也严重怀疑是不是厨子按下了桌子下面的按钮，要彻底抛弃我们这些 intel chip 了。</p>
+<h2 id="0x01-powerd-cpu-yi-chang-de-gao">0x01 powerd cpu 异常的高</h2>
+<p>就算是不使用,刚开机，风扇也是狂转，抽风一样，一看活动监视器，powerd，cpu 的 usage 就是 100多。</p>
+<pre data-lang="bash" style="background-color:#2b303b;color:#c0c5ce;" class="language-bash "><code class="language-bash" data-lang="bash"><span style="color:#65737e;"># 列出 powerd 的计划任务
+</span><span style="color:#bf616a;">pmset -g</span><span> sched
+</span><span style="color:#65737e;"># 关闭 powerd 的计划任务
+</span><span style="color:#bf616a;">sudo</span><span> pmset schedule cancelall
+</span></code></pre>
+
+            </div>
+            <div style="text-align: center;color:#ccc;margin: 2rem 0;"> — EOF — </div>
+            <div style="height: 1rem;"></div>
+          </div>
+          <div style="height: 4rem;"></div>
+          <script
+            src="https://giscus.app/client.js"
+            data-repo="lewiswon/giscus"
+            data-repo-id="R_kgDOGqla5g"
+            data-category="Announcements"
+            data-category-id="DIC_kwDOGqla5s4CApzV"
+            data-mapping="pathname"
+            data-reactions-enabled="1"
+            data-emit-metadata="0"
+            data-theme="light"
+            data-lang="zh-CN"
+            crossorigin="anonymous"
+            async
+          >
+          </script>
+          <div style="height: 4rem;"></div>
+          
+        </div>
+      </section>
+    </div>
+</body>
+
+</html>
